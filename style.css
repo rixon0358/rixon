@@ -22,3 +22,12 @@ header nav{flex-wrap:wrap;justify-content:flex-end;column-gap:25px;row-gap:0}.na
 .policy-line{margin:0 0 1rem;font-size:clamp(1.6rem,3vw,2.85rem);line-height:1.55;font-weight:700;text-wrap:balance}.policy-intro{max-width:39em;margin:0;line-height:2;color:#dbe4f0}
 .corporate-greeting{background:white;color:var(--ink);border-bottom:1px solid var(--line)}.corporate-greeting .director-message{max-width:41em}.corporate-greeting .director-signature{border-color:var(--line);text-align:right}.corporate-greeting .director-signature span{color:var(--muted)}
 @media(max-width:780px){.company-policy,.corporate-greeting{grid-template-columns:1fr;gap:1.5rem;padding:2.75rem 7%}.company-policy h2,.corporate-greeting h2{padding-top:0}}
+
+/* Representative portrait, paired with the company greeting. */
+.corporate-greeting{grid-template-columns:minmax(240px,1fr) minmax(0,1.9fr);align-items:start}
+.director-profile{min-width:0}.director-portrait{margin:1.75rem 0 0;max-width:370px}
+.director-portrait img{display:block;width:100%;height:auto}
+.director-portrait figcaption{padding:1.15rem 0 0;line-height:1.6}
+.director-portrait figcaption span{display:block;font-size:.8rem;color:var(--muted);letter-spacing:.06em}
+.director-portrait figcaption strong{display:block;margin-top:.3rem;font-size:1.4rem;font-weight:600;letter-spacing:.1em}
+@media(max-width:780px){.corporate-greeting{grid-template-columns:1fr;gap:2rem}.director-portrait{max-width:340px;margin:1.5rem auto 0}.director-portrait figcaption{padding-top:1rem}}
